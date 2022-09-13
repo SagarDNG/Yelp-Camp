@@ -1,0 +1,67 @@
+<% layout('layouts/boilerplate') %>
+    <div class="row">
+        <h1 class="text-center">Create a New CampGround</h1>
+        <div class="col-md-6 offset-md-3 mb-5">
+            <form action="/campgrounds" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label class="form-label" for="title">Campground Title</label>
+                    <input class="form-control" type="text" id="title" name="camp[title]" placeholder="Campground Title"
+                        required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Campground Title is Required.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="location">Campground Location</label>
+                    <input class="form-control" type="text" id="location" name="camp[location]"
+                        placeholder="Campground Location" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Campground Location is Required.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="image" name="image" multiple>
+                        <label class="input-group-text" for="image" hidden></label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="price">Campground Price</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-dark-50 text-info" id="price-label">₹</span>
+                        <input type="number" class="form-control" id="price" aria-label="price"
+                            aria-describedby="price-label" name="camp[price]"
+                            placeholder="Campground Price (from ₹1000 to ₹2000)" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Campground Price is Required.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="description">Campground Description</label>
+                    <textarea class="form-control" type="text" id="description" name="camp[description]"
+                        placeholder="Campground Description" required></textarea>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Campground Description is Required.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-info">Create a Campground</button>
+                </div>
+            </form>
+            <a href="/campgrounds/" class="btn btn-warning" role="button" aria-disabled="true">Back (to All Camps)</a>
+        </div>
+    </div>
