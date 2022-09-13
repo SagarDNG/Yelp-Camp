@@ -6,6 +6,7 @@ First, go to folder location
 ```
 cd /d folderPath
 ```
+Don't forget to add .gitignore file
 ```
 git init
 ```
