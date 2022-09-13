@@ -1,7 +1,7 @@
 ## Udemy Bootcamp Project
 
-# Deployment commands for Heroku
-Ensure you have Git & Heroku CLI
+### Deployment commands for Heroku
+Ensure you have Git & Heroku CLI <br>
 First, go to folder location 
 ```
 cd /d folderPath
