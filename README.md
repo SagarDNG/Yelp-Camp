@@ -6,7 +6,7 @@
 node index.js
 ```
 OR
-1
+
 ``` 
 nodemon 
 ```
