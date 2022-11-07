@@ -40,3 +40,18 @@ We'll get herokuAppName after creating heroku App
 ```
 git push heroku master
 ```
+
+### Pushing changes to Heroku App
+```
+git add .
+```
+```
+git commit -m "commitMessageHere"
+```
+```
+heroku login
+```
+```
+git push heroku master
+```
+
