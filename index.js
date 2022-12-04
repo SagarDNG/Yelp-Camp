@@ -120,6 +120,7 @@ app.use(
                 "data:",
                 "https://res.cloudinary.com/sagar-d/image/upload/",
                 "https://images.unsplash.com/",
+                "https://img.icons8.com/color/2x/camping-tent.png"
             ],
             fontSrc: ["'self'", ...fontSrcUrls],
         },
